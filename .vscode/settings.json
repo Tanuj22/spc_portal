@@ -1,7 +1,0 @@
-{
-    "python.pythonPath": "f:\\New folder\\spc_portal\\mypython\\Scripts\\python.exe",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.linting.pep8Enabled": false
-}
