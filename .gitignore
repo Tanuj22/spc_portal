@@ -95,6 +95,8 @@ celerybeat-schedule
 venv/
 ENV/
 spc_portal_venv/
+mypython/
+
 
 # Spyder project settings
 .spyderproject

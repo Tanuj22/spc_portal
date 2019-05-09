@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
 import os
+from .models import PastRecruiters
 
 
 class HomepageView(TemplateView):
@@ -12,7 +13,5 @@ class HomepageView(TemplateView):
         print(carousel)
         carousel = ['img/homepage-carousel/' + image for image in carousel]
         context['carousel'] = carousel
-        companies = os.listdir("staticfiles/img/company-logo")
-        companies = ['img/company-logo/' + image for image in companies]
-        context['companies'] = companies
+        context['companies'] = PastRecruiters.objects.filter(active=True).order_by('company_order_no')
         return context
