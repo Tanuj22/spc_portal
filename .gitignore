@@ -53,7 +53,8 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-
+contacts
+.vscode
 # Translations
 *.mo
 *.pot
